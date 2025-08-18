@@ -1,33 +1,41 @@
 using Cassandra.DataApi;
-using Cassandra.DataApi.Models;
-using Microsoft.Extensions.Configuration;
 using System;
 using System.Threading.Tasks;
 
-class Programs
+public class UserDoc
+{
+    public string email { get; set; } = default!;
+    public string name { get; set; } = default!;
+    public string password { get; set; } = default!;
+
+    public Guid user_id { get; set; }
+}
+
+class Program
 {
     static async Task Main()
     {
-        var config = new ConfigurationBuilder()
-            .SetBasePath(AppContext.BaseDirectory)
-            .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
-            .Build();
+        string token = "";
+        string endpoint = "https://3fc2f1fb-ef2f-4f80-ad2b-b8ac0c97ce93-westus3.apps.astra.datastax.com";
+        string keyspace = "dev_cdk_ks";
 
-        var endpoint = config["Astra:Endpoint"];
-        var token    = config["Astra:Token"];
+        using var client = new AstraDataApiClient(token, endpoint);
+        var database = client.GetDatabase(keyspace);
+        var users = database.GetCollection<UserDoc>("users");
 
-        var client = new AstraDataApiClient(endpoint, token);
-
-        var usersJson = await client.GetAllRowsAsync("users");
-        Console.WriteLine("Users: " + usersJson);
-
-        var user = new User
+        // Insert one
+        var insert = await users.InsertOneAsync(new UserDoc
         {
             email = "siva@example.com",
             name = "Siva",
+            password = "password123",
             user_id = Guid.NewGuid()
-        };
-        var result = await client.InsertRowAsync("users", user);
-        Console.WriteLine("Insert result: " + result);
+        });
+
+        Console.WriteLine("InsertedId: " + insert);
+
+        // Find one
+        var found = await users.FindOneAsync(new { email = "siva@example.com" });
+        Console.WriteLine(found is null ? "Not found" : $"Found: {found.email} / {found.name}");
     }
 }

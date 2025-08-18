@@ -8,6 +8,9 @@
     <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="9.0.8" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="9.0.8" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Cassandra.SecureConnect\Cassandra.SecureConnect.csproj" />
+  </ItemGroup>
 
   <ItemGroup>
     <!-- Ensure the SCB zip is copied to the output folder next to the .exe -->

@@ -11,3 +11,4 @@
 /astra-dotnet-samples/src/Acme.Cassandra.DataApi/obj
 /astra-dotnet-samples/src/Acme.Cassandra.SecureConnect/bin/Debug/net8.0
 /astra-dotnet-samples/src/Acme.Cassandra.SecureConnect/obj
+/astra-dotnet-samples/src/Cassandra.DataApi/obj/Debug/net8.0
