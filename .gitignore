@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/astra-dotnet-samples/.vs/AstraDotnetSamples
+/astra-dotnet-samples/samples/Samples.Console.DataApi/bin/Debug/net9.0
+/astra-dotnet-samples/samples/Samples.Console.DataApi/obj
+/astra-dotnet-samples/samples/Samples.Console.Driver/bin/Debug/net8.0
+/astra-dotnet-samples/samples/Samples.Console.Driver/obj
+/astra-dotnet-samples/src/Acme.Cassandra.DataApi/bin/Debug/net8.0
+/astra-dotnet-samples/src/Acme.Cassandra.DataApi/obj
+/astra-dotnet-samples/src/Acme.Cassandra.SecureConnect/bin/Debug/net8.0
+/astra-dotnet-samples/src/Acme.Cassandra.SecureConnect/obj

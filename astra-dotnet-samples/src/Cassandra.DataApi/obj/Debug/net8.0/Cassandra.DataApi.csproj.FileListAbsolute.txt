@@ -1,0 +1,12 @@
+C:\siva\solutions\cassandra-dotnet-examples\astra-dotnet-samples\src\Acme.Cassandra.DataApi\bin\Debug\net8.0\Cassandra.DataApi.deps.json
+C:\siva\solutions\cassandra-dotnet-examples\astra-dotnet-samples\src\Acme.Cassandra.DataApi\bin\Debug\net8.0\Cassandra.DataApi.dll
+C:\siva\solutions\cassandra-dotnet-examples\astra-dotnet-samples\src\Acme.Cassandra.DataApi\bin\Debug\net8.0\Cassandra.DataApi.pdb
+C:\siva\solutions\cassandra-dotnet-examples\astra-dotnet-samples\src\Acme.Cassandra.DataApi\obj\Debug\net8.0\Cassandra.DataApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\siva\solutions\cassandra-dotnet-examples\astra-dotnet-samples\src\Acme.Cassandra.DataApi\obj\Debug\net8.0\Cassandra.DataApi.AssemblyInfoInputs.cache
+C:\siva\solutions\cassandra-dotnet-examples\astra-dotnet-samples\src\Acme.Cassandra.DataApi\obj\Debug\net8.0\Cassandra.DataApi.AssemblyInfo.cs
+C:\siva\solutions\cassandra-dotnet-examples\astra-dotnet-samples\src\Acme.Cassandra.DataApi\obj\Debug\net8.0\Cassandra.DataApi.csproj.CoreCompileInputs.cache
+C:\siva\solutions\cassandra-dotnet-examples\astra-dotnet-samples\src\Acme.Cassandra.DataApi\obj\Debug\net8.0\Cassandra.DataApi.sourcelink.json
+C:\siva\solutions\cassandra-dotnet-examples\astra-dotnet-samples\src\Acme.Cassandra.DataApi\obj\Debug\net8.0\Cassandra.DataApi.dll
+C:\siva\solutions\cassandra-dotnet-examples\astra-dotnet-samples\src\Acme.Cassandra.DataApi\obj\Debug\net8.0\refint\Cassandra.DataApi.dll
+C:\siva\solutions\cassandra-dotnet-examples\astra-dotnet-samples\src\Acme.Cassandra.DataApi\obj\Debug\net8.0\Cassandra.DataApi.pdb
+C:\siva\solutions\cassandra-dotnet-examples\astra-dotnet-samples\src\Acme.Cassandra.DataApi\obj\Debug\net8.0\ref\Cassandra.DataApi.dll
